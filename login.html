@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+   
+  <body>
+    <h2> This is Login Page </h2>
+      <div class="container">    
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="Input_loginName" type="text" class="validate">
+            <label for="Input_loginName">登入名稱</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="Input_password" type="text" class="validate">
+            <label for="Input_password">密碼</label>            
+          </div>
+       </div> <!-- CLOSE ROW -->
+      
+       <div class="row">
+          <button id="LogInButton" class="hide"></button>
+          <button id="LogInButton_New" method="get" onclick="passValues();">登入</button>
+       </div> <!-- CLOSE ROW -->     
+      
+    </div> <!-- CLOSE CONTAINER -->
+    
+    
+    <div id="ex_label_login"></div>
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+  </body>
+ 
+</html>

@@ -1,0 +1,141 @@
+h2 {
+    margin: 0;
+    padding-top:20px;
+    font-size:64px;
+    line-height:74px;
+  }
+  
+  h5 {
+    margin:0;
+  }
+    
+  
+  
+  body {
+    background-color:#ffffec;
+  }
+  
+  .loader {
+      background-color:#db4437;
+  }
+  
+  #startButton{
+    color:white;
+    background:rgb(148,148,30);
+    font-size:50px;
+    border-radius:50px;  
+    width: 400px;
+    height:120px
+  }
+  
+  #nextButton{
+    color:white;
+    background:rgb(148,148,30);
+    font-size:40px;
+    border-radius:30px;  
+    width:250px;
+    height:70px
+  }
+  
+  #Btn_LeaveChallenge{
+    color:white;
+    background:rgb(148,148,30);
+    font-size:40px;
+    border-radius:30px;  
+    width:250px;
+    height:70px
+  }
+  
+  #gameStatus{
+    color:rgb(22,22,22);
+    font-size:28px;
+    line-height:38px;
+  }
+  
+  #question_type{
+    margin-top: 10px;
+    background-color:rgba(200,200,100,0.7);
+    color:rgb(20,20,120);
+    font-size:28px;
+    line-height:36px;
+  }
+  
+  #question_text{
+    margin-bottom: 10px;
+    background-color:rgba(0,0,0,0.7);
+    color:white;
+    font-size:36px;
+    line-height:46px;
+  }
+  
+  #your_answer_title{
+    font-size:36px;
+    line-height:46px;
+  }
+  
+  #your_answer{
+    font-size:36px;
+    line-height:46px;
+  }
+  
+  #countDownNoTitle{
+    font-size:28px;
+    line-height:38px;
+  }
+  
+  #countDownNo{
+    font-size:28px;
+    line-height:38px;
+  }
+  
+  #correct_answer{
+    font-size:36px;
+    line-height:46px;
+  }
+  
+  #question_AnswerFeedback{
+    font-size:36px;
+    line-height:46px;
+  }
+  
+  #correct_answer_title{
+    margin-top: 10px;
+    background-color:rgba(50,50,10,0.7);
+    color:white;
+    font-size:28px;
+    line-height:38px;
+  }
+  
+  #correct_answer_text{
+    font-size:36px;
+    line-height:46px;
+    color:white;
+    background-color:rgba(30,30,30,0.9);
+  }
+  
+  #correct_answer_verse{
+    font-size:36px;
+    line-height:46px;
+    color:white;
+    background-color:rgba(50,50,0,1);
+  }
+  
+  #gameOverMsg{
+    font-size:36px;
+    line-height:46px;
+    color:rgb(100,100,0);
+  }
+  
+  #gameResult{
+    font-size:36px;
+    line-height:46px;
+    color:rgb(100,100,0);
+  }
+  
+  
+  #progressBar{
+    color:rgb(120,120,0);
+    width:400px;
+    height:50px;
+  }
+  
