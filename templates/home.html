@@ -3,20 +3,25 @@
 Home page
 {% endblock %}
 
-{% block css %}
+{% block css %}    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
 {% endblock %}
 
 
 {% block content %}
-    
-    <div id="head1" class="middleAlign"><h1>Hi, I'm Diamond Dai</h1></div>
-    <div id="diamondImg" class="middleAlign"><img src="{{ url_for('static', filename='images/diamond2.png')}}"></div>
-    <div id="head3" class="middleAlign"><h1>A Software Developer</h1></div>
-        
+    <div class="top_block">
+        <div class="top_cell roboto-bold"><p id="head1">Hi, I'm Diamond Dai</p></div>
+        <div class="top_cell"><img id="diamondImg" src="{{ url_for('static', filename='images/diamond2.png')}}"></div>
+        <div class="top_cell roboto-bold"><p id="head3">A Software Developer</p></div>
+    </div>
+    <div class="content_container">
+
+    </div>
+            
 {% endblock %}
 
 
-{% block script %}    
+{% block script %}
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>    
     <script src="{{ url_for('static', filename='script/home.js')}}"></script>
 {% endblock %}

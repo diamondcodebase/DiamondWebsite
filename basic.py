@@ -14,9 +14,13 @@ def page_not_found(e):
 def about():
     return render_template("about.html")
 
-@app.route("/email")
+@app.route("/contact")
 def email():
-    return render_template("email.html")
+    return render_template("contact.html")
+
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
 
 @app.route("/quiz")
 def quiz():
