@@ -1,0 +1,36 @@
+  #head1 {
+    display:none;          
+  }
+  
+  #head3 {
+    display:none;          
+    }
+
+  #diamondImg {
+    display:none;
+    height: 50px;
+    width:50px;
+  }
+
+  .middleAlign {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    align-self: center;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+/* 
+  div {
+    align-content: center;
+  }
+
+  img {
+    align-content: center;
+  } */

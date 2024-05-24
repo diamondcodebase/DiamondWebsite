@@ -3,7 +3,20 @@
 Home page
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+{% endblock %}
+
+
 {% block content %}
-    <h1>Home Page</h1>
-    <image src="{{ url_for('static', filename='images/rolling.png')}}"></image>
+    
+    <div id="head1" class="middleAlign"><h1>Hi, I'm Diamond Dai</h1></div>
+    <div id="diamondImg" class="middleAlign"><img src="{{ url_for('static', filename='images/diamond2.png')}}"></div>
+    <div id="head3" class="middleAlign"><h1>A Software Developer</h1></div>
+        
+{% endblock %}
+
+
+{% block script %}    
+    <script src="{{ url_for('static', filename='script/home.js')}}"></script>
 {% endblock %}

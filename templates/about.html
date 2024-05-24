@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <base target="_top">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  </head>
+{% extends 'base.html' %}
+{% block title %}
+  About
+{% endblock %}
   
-  <body>  
+{% block content %}
     <div class="container">
 
     </div> <!-- CLOSE CONTAINER -->
@@ -15,11 +11,12 @@
    <div class="container">
      <div class="row">
        <div class="input-field col s4">
-         <div id="chipAbout" class="chips"></div>
+         <div id="chipAbout" class="chips">
+          This is contact detail
+         </div>
        </div>
      </div> <!-- CLOSE ROW -->
    </div> <!-- CLOSE CONTAINER -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
-</html>
+{% endblock %}
