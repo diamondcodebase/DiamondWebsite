@@ -3,8 +3,12 @@
   About Me
 {% endblock %}
   
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+{% endblock %}
+
 {% block content %}
-    <div class="container">
+    <div id="self_intro" class="container">
       <p>Curiosity creates possibility and change, and also ignites my passion for coding.</p>
       <p>Hi, I am Diamond, a software developer</p>
       <p>My journey began in physics and engineering, where I sought to understand how the world works and find ways to improve lives through technology. Over time, a serious health issue prompted a career change towards coding. I started self-learning coding in VBA. I built my first, simple program which automatically processes boring routine copy and paste tasks. I was struck by the power of software to automate manual tasks and liberate human potential.</p>         

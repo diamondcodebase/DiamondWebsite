@@ -9,13 +9,41 @@ Home page
 
 
 {% block content %}
-    <div class="top_block">
-        <div class="top_cell roboto-bold"><p id="head1">Hi, I'm Diamond Dai</p></div>
-        <div class="top_cell"><img id="diamondImg" src="{{ url_for('static', filename='images/diamond2.png')}}"></div>
-        <div class="top_cell roboto-bold"><p id="head3">A Software Developer</p></div>
+    <div id='top_block'>
+        <div class = 'row'>
+            <div clas='col-md-12'>
+                <div class="container">
+                    <div class="top_cell roboto-bold"><p id="head1">Hi, I'm Diamond Dai</p></div>
+                    <div class="top_cell"><img id="diamondImg" src="{{ url_for('static', filename='images/diamond2.png')}}"></div>
+                    <div class="top_cell roboto-bold"><p id="head3">A Software Developer</p></div>              
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="content_container">
+    <div id='content_container'>
+        <div class='jumbotron' id='jumbotronDeveloper'>
+            <div class="container">
+                <div class="row">
+                    <div clas='col-md-12'>
+                        <h2 class="display-4">Developer Daily</h2>
+                        <a class="btn btn-primary btn-lg" href="https://medium.com/@diamond.dai/developer-daily-a-simple-python-project-and-a-simple-concept-0ec2ee6ebff1">Learn Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='jumbotron' id='jumbotronCoding'>
+            <div class="container">
+                <div class="row">
+                    <div clas='col-md-12'>
+                        <h2 class="display-4">Coding is not just tech, \n But art work</h2>
+                        <a class="btn btn-primary btn-lg">Learn Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
 
+        </div>
     </div>
             
 {% endblock %}

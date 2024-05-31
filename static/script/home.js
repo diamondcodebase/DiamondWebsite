@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $('#head1').fadeIn(1000);
-    $('#diamondImg').delay(1000).fadeIn(1000);
-    $('#head3').delay(2000).fadeIn(1000);
+    $('#head1').fadeIn(300);
+    $('#diamondImg').fadeIn(600);
+    $('#head3').fadeIn(900);
+    $('#content_container').delay(900).fadeIn(500);
 });

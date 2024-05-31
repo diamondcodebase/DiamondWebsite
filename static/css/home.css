@@ -10,10 +10,13 @@
     display:none;
   }
 
-  .top_block{
+  #content_container{
+    display:none;
+  }
+
+  #top_block{
     display:flex;
     flex-direction: column;
-    height:20%;
   }
 
   .top_cell{
@@ -30,18 +33,51 @@
     color:darkslateblue;
   }
 
+  /* Jumbotron Related */
+  #content_container .jumbotron{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 60vh;
+    margin-bottom:0px;
+  }
 
-/* 
-  .container {
-    align-self: center;
-    height: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-  } */
+  #content_container .jumbotron .container{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 
-  /* Google font Ro classes */
+  
+  #content_container .jumbotron .container h2{
+    color: white;
+    font-weight: bold;
+  }
 
+  #jumbotronDeveloper{
+    background: url('../images/developerDaily.png')
+  }
+
+  #jumbotronCoding{
+    background: url('../images/programming.jpg')
+  }
+
+  .btn{
+    background-color: darkslateblue;
+    color:white;
+    padding: 7px 28px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .btn:hover{
+    background-color: #eeee77;
+    color:darkslateblue;
+    opacity: 0.8;
+  }
+
+
+  /* For Specific Font */
   .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
