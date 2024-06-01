@@ -30,15 +30,12 @@
   .top_cell p{
     font-size:4vw;
     font-weight: bold;
-    color:darkslateblue;
+    color:#442200;
   }
 
   /* Jumbotron Related */
   #content_container .jumbotron{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 60vh;
+    height: 40vh;
     margin-bottom:0px;
   }
 
@@ -55,15 +52,64 @@
   }
 
   #jumbotronDeveloper{
-    background: url('../images/developerDaily.png')
+    background: url('../images/developerDaily1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
-  #jumbotronCoding{
-    background: url('../images/programming.jpg')
+  #jumbotronDeveloper:hover{
+    background: url('../images/developerDaily2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #jumbotronCLI{
+    background: url('../images/CLI1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #jumbotronCLI:hover{
+    background: url('../images/CLI2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #jumbotronArtWork{
+    background: url('../images/artWork1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #jumbotronArtWork:hover{
+    background: url('../images/artWork2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+
+  #jumbotronParenting{
+    background: url('../images/parenting1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #jumbotronParenting:hover{
+    background: url('../images/parenting2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   .btn{
-    background-color: darkslateblue;
+    background-color: #664400;
     color:white;
     padding: 7px 28px;
     border-radius: 10px;
@@ -72,7 +118,7 @@
 
   .btn:hover{
     background-color: #eeee77;
-    color:darkslateblue;
+    color:#664400;
     opacity: 0.8;
   }
 
