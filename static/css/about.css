@@ -2,9 +2,44 @@ p {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
   }
 
-#self_intro p {
-  font-size: 18px;
+#startingPoint_img {
+  background: url('../images/startingPoint.png');
+}
+
+#turningPoint_img {
+  background: url('../images/turningPoint.png');
+}
+
+#ignitionPoint_img {
+  background: url('../images/ignitionPoint.png');
+}
+
+#newExploration_img {
+  background: url('../images/newExploration.png');
+}
+
+.content_container {
+  margin-bottom:180px;
+}
+
+#self_intro .jumbotron .col-md-8 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-bottom: 20px;
+}
+
+#self_intro .jumbotron .col-md-4{
+  height: 40vh;
+  padding: 10px;
+  text-align: center;
+}
+
+.cinner{
+  position: relative;
+  top:50%;
+  transform: translate(0, -50%);
 }

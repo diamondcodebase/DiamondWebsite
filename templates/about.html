@@ -4,26 +4,185 @@
 {% endblock %}
   
 {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css')}}">
 {% endblock %}
 
 {% block content %}
-    <div id="self_intro" class="container">
-      <p>Curiosity creates possibility and change, and also ignites my passion for coding.</p>
-      <p>Hi, I am Diamond, a software developer</p>
-      <p>My journey began in physics and engineering, where I sought to understand how the world works and find ways to improve lives through technology. Over time, a serious health issue prompted a career change towards coding. I started self-learning coding in VBA. I built my first, simple program which automatically processes boring routine copy and paste tasks. I was struck by the power of software to automate manual tasks and liberate human potential.</p>         
-      <p>As a software developer in the past few years, I take great joy in exploring new languages, frameworks and technologies to expand my skills. My natural curiosity also drives me to always be seeking the newest innovations and evaluating how they could solve real problems. I also enjoy collaborating with cross-functional teams to bring projects to life.</p>
-    </div> <!-- CLOSE CONTAINER -->
-  
-   <div class="container">
-     <div class="row">
+    <section id='self_intro'>
+      <div id="intro_prefix" class="text-center">
+        <h1>My Journey</h1>
+        <h5 class="">Curiosity creates possibility and goodwill guides change. The change usually brings us to discover beautiful arts. This force ignited my passion for coding.
+        </h5>
+        <h4>Hi, I am Diamond, a software developer</h3>
+      </div>
+      <div id="myJourneyCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" weight="100%" height="100%" src="/static/images/c_adventure_starts.png" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Starting Point</h1>
+                <p>My journey began in physics and engineering...</p>
+                <p>When I was young, I always thought my dream was to be a scientist</p>
+                <p>who can contribute to the development of technology, which makes life better for humans.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" weight="100%" height="100%" src="/static/images/c_turning_point.png" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Saturation</h1>
+                <p>After years, I felt bored of repeated, routine jobs</p>
+                <p>I recognized my desire to change, and to broaden my horizons.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" weight="100%" height="100%" src="/static/images/c_turning_point.png" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Turning Point</h1>
+                <p>Dramatically, my serious illness acted as the ignition point...</p>
+                <p>I started self-learning coding in VBA.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" weight="100%" height="100%" src="/static/images/c_turning_point.png" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Thanks for watching</h1>
+                  <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class='jumbotron capImage'>
+        <div class = 'row'>
+          <div id="startingPoint_img" class="col-md-8"></div>
+          <div class="col-md-4">
+            <div class = 'cinner'>
+              <h2>Starting Point</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='starting_point_content' class='content_container'>
+        <div class='row'>
+          <div class='col-md-2'></div>
+          <div class='col-md-8'>
+              <div class='container'>
+                <p>My journey began in physics and engineering. When I was young, I always thought my dream was to be a scientist who can contribute to the development of technology, which makes life better for humans. This dream drove me to finish my Physics MPhil in university and to be an engineer in the early years of my career. 
+                <p>After years, I felt bored of repeated, routine jobs, and I recognized my desire to change, and to broaden my horizons.</p>
+                <p>Something does not change, I sought to understand how the world works and find ways to improve lives through technology.</p>
+              </div>
+          </div>
+          <div class='col-md-2'></div>
+        </div>
+      </div>
+
+      <div class='jumbotron capImage'>
+        <div class = 'row'>
+          <div id="turningPoint_img" class="col-md-8"></div>
+          <div class="col-md-4">
+            <div class = 'cinner'>
+              <h2>Turning Point</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='turning_point_content' class='content_container'>
+        <div class='row'>
+          <div class='col-md-2'></div>
+          <div class='col-md-8'>
+              <div class='container'>
+                <p>Dramatically, my serious illness acted as the ignition point: I was forced to take a long rest, but it helped me discover new passions and consider alternative career paths I might not have otherwise explored.</p>
+                <p>I started self-learning coding in VBA.</p>
+              </div>
+          </div>
+          <div class='col-md-2'></div>
+        </div>
+      </div>  
+
+      <div class='jumbotron capImage'>
+        <div class = 'row'>
+          <div id="ignitionPoint_img" class="col-md-8"></div>
+          <div class="col-md-4">
+            <div class = 'cinner'>
+              <h2>Ignition Point</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='ignition_point_content' class='content_container'>
+        <div class='row'>
+          <div class='col-md-2'></div>
+          <div class='col-md-8'>
+              <div class='container'>
+                <p>When I returned to my original work duty, I clicked the auto program to process boring copy and paste data sheet tasks.</p>
+                <p>The instant it finished tasks ignited my passion for coding.</p>
+                <p>I was impressed how it boosted my job efficiency, it was satisfying, and its possibilities. </p>
+              </div>
+          </div>
+          <div class='col-md-2'></div>
+        </div>
+      </div>  
+
+      <div class='jumbotron capImage'>
+        <div class = 'row'>
+          <div id="newExploration_img" class="col-md-8"></div>
+          <div class="col-md-4">
+            <div class = 'cinner'>
+              <h2>New Exploration</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='new_exploration_content' class='content_container'>
+        <div class='row'>
+          <div class='col-md-2'></div>
+          <div class='col-md-8'>
+              <div class='container'>
+                <p>I continued improving my coding skill, exploring new possible more efficient solutions.</p>
+                <p>I really enjoy the process. Meanwhile, I was looking for a way to start a new career of being a software developer. </p>
+                <p>Finally, I got a job in a technical solution vendor company, being an analyst programmer. </p>
+                <p>This is the starting point of my new adventure.</p>
+              </div>
+          </div>
+          <div class='col-md-2'></div>
+        </div>
+      </div>  
+      
+      <div class="row">
        <div class="input-field col s4">
          <div id="chipAbout" class="chips">
           
          </div>
        </div>
      </div> <!-- CLOSE ROW -->
-   </div> <!-- CLOSE CONTAINER -->
+    </section> <!-- CLOSE SECTION -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 {% endblock %}
